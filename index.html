@@ -1,121 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8">
-		<title>Devine</title>
-		<meta name="description" content="Devine le nombre">
-	</head>
-	<body>
-		<h1>Devine le nombre </h1>
-		<p>Un nombre aléatoire entre 1 et 100 a été choisi. Essaie de le trouver en moins de dix essais.
-			Pour faciliter un peu les choses, nous te dirons à chaque fois si le nombre soumis est plus petit ou plus grand que le
-			nombre choisi.</p>
-		<div>
-			<label for="essai">Le nombre choisi est: </label>
-			<input type="text" id="essai">
-			<button>Soumettre</button>
-		</div>
-		<div class="nombres">
-			<div id="1" class="nombre">001</div>
-			<div id="2" class="nombre">002</div>
-			<div id="3" class="nombre">003</div>
-			<div id="4" class="nombre">004</div>
-			<div id="5" class="nombre">005</div>
-			<div id="6" class="nombre">006</div>
-			<div id="7" class="nombre">007</div>
-			<div id="8" class="nombre">008</div>
-			<div id="9" class="nombre">009</div>
-			<div id="10" class="nombre">010</div>
-			<div id="11" class="nombre">011</div>
-			<div id="12" class="nombre">012</div>
-			<div id="13" class="nombre">013</div>
-			<div id="14" class="nombre">014</div>
-			<div id="15" class="nombre">015</div>
-			<div id="16" class="nombre">016</div>
-			<div id="17" class="nombre">017</div>
-			<div id="18" class="nombre">018</div>
-			<div id="19" class="nombre">019</div>
-			<div id="20" class="nombre">020</div>
-			<div id="21" class="nombre">021</div>
-			<div id="22" class="nombre">022</div>
-			<div id="23" class="nombre">023</div>
-			<div id="24" class="nombre">024</div>
-			<div id="25" class="nombre">025</div>
-			<div id="26" class="nombre">026</div>
-			<div id="27" class="nombre">027</div>
-			<div id="28" class="nombre">028</div>
-			<div id="29" class="nombre">029</div>
-			<div id="30" class="nombre">030</div>
-			<div id="31" class="nombre">031</div>
-			<div id="32" class="nombre">032</div>
-			<div id="33" class="nombre">033</div>
-			<div id="34" class="nombre">034</div>
-			<div id="35" class="nombre">035</div>
-			<div id="36" class="nombre">036</div>
-			<div id="37" class="nombre">037</div>
-			<div id="38" class="nombre">038</div>
-			<div id="39" class="nombre">039</div>
-			<div id="40" class="nombre">040</div>
-			<div id="41" class="nombre">041</div>
-			<div id="42" class="nombre">042</div>
-			<div id="43" class="nombre">043</div>
-			<div id="44" class="nombre">044</div>
-			<div id="45" class="nombre">045</div>
-			<div id="46" class="nombre">046</div>
-			<div id="47" class="nombre">047</div>
-			<div id="48" class="nombre">048</div>
-			<div id="49" class="nombre">049</div>
-			<div id="50" class="nombre">050</div>
-			<div id="51" class="nombre">051</div>
-			<div id="52" class="nombre">052</div>
-			<div id="53" class="nombre">053</div>
-			<div id="54" class="nombre">054</div>
-			<div id="55" class="nombre">055</div>
-			<div id="56" class="nombre">056</div>
-			<div id="57" class="nombre">057</div>
-			<div id="58" class="nombre">058</div>
-			<div id="59" class="nombre">059</div>
-			<div id="60" class="nombre">060</div>
-			<div id="61" class="nombre">061</div>
-			<div id="62" class="nombre">062</div>
-			<div id="63" class="nombre">063</div>
-			<div id="64" class="nombre">064</div>
-			<div id="65" class="nombre">065</div>
-			<div id="66" class="nombre">066</div>
-			<div id="67" class="nombre">067</div>
-			<div id="68" class="nombre">068</div>
-			<div id="69" class="nombre">069</div>
-			<div id="70" class="nombre">070</div>
-			<div id="71" class="nombre">071</div>
-			<div id="72" class="nombre">072</div>
-			<div id="73" class="nombre">073</div>
-			<div id="74" class="nombre">074</div>
-			<div id="75" class="nombre">075</div>
-			<div id="76" class="nombre">076</div>
-			<div id="77" class="nombre">077</div>
-			<div id="78" class="nombre">078</div>
-			<div id="79" class="nombre">079</div>
-			<div id="80" class="nombre">080</div>
-			<div id="81" class="nombre">081</div>
-			<div id="82" class="nombre">082</div>
-			<div id="83" class="nombre">083</div>
-			<div id="84" class="nombre">084</div>
-			<div id="85" class="nombre">085</div>
-			<div id="86" class="nombre">086</div>
-			<div id="87" class="nombre">087</div>
-			<div id="88" class="nombre">088</div>
-			<div id="89" class="nombre">089</div>
-			<div id="90" class="nombre">090</div>
-			<div id="91" class="nombre">091</div>
-			<div id="92" class="nombre">092</div>
-			<div id="93" class="nombre">093</div>
-			<div id="94" class="nombre">094</div>
-			<div id="95" class="nombre">095</div>
-			<div id="96" class="nombre">096</div>
-			<div id="97" class="nombre">097</div>
-			<div id="98" class="nombre">098</div>
-			<div id="99" class="nombre">099</div>
-			<div id="100" class="nombre">100</div>
-		</div>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <title>Devine</title>
+    <meta name="description" content="Devine le nombre">
+    <link rel="stylesheet" href="style.css">
+    jquery cdn from jquery.com use minified version in production
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Devine le nombre </h1>
+<p>Un nombre aléatoire entre 1 et 100 a été choisi. Essaie de le trouver en moins de dix essais.
+    Pour faciliter un peu les choses, nous te dirons à chaque fois si le nombre soumis est plus petit ou plus grand que
+    le
+    nombre choisi.</p>
+<div>
+    <label for="essai">Le nombre choisi est: </label>
+    <input type="text" id="essai">
+    <button>Soumettre</button>
+    <p id="msgEssais" class="invisible">Vos essais jusqu'à maintenant: </p>
+    <p id="hint"></p>
+</div>
+<div class="nombres">
+
+    <div id="1" class="nombre">001</div>
+    <div id="2" class="nombre">002</div>
+    <div id="3" class="nombre">003</div>
+    <div id="4" class="nombre">004</div>
+    <div id="5" class="nombre">005</div>
+    <div id="6" class="nombre">006</div>
+    <div id="7" class="nombre">007</div>
+    <div id="8" class="nombre">008</div>
+    <div id="9" class="nombre">009</div>
+    <div id="10" class="nombre">010</div>
+
+    <div id="11" class="nombre">011</div>
+    <div id="12" class="nombre">012</div>
+    <div id="13" class="nombre">013</div>
+    <div id="14" class="nombre">014</div>
+    <div id="15" class="nombre">015</div>
+    <div id="16" class="nombre">016</div>
+    <div id="17" class="nombre">017</div>
+    <div id="18" class="nombre">018</div>
+    <div id="19" class="nombre">019</div>
+    <div id="20" class="nombre">020</div>
+
+    <div id="21" class="nombre">021</div>
+    <div id="22" class="nombre">022</div>
+    <div id="23" class="nombre">023</div>
+    <div id="24" class="nombre">024</div>
+    <div id="25" class="nombre">025</div>
+    <div id="26" class="nombre">026</div>
+    <div id="27" class="nombre">027</div>
+    <div id="28" class="nombre">028</div>
+    <div id="29" class="nombre">029</div>
+    <div id="30" class="nombre">030</div>
+
+    <div id="31" class="nombre">031</div>
+    <div id="32" class="nombre">032</div>
+    <div id="33" class="nombre">033</div>
+    <div id="34" class="nombre">034</div>
+    <div id="35" class="nombre">035</div>
+    <div id="36" class="nombre">036</div>
+    <div id="37" class="nombre">037</div>
+    <div id="38" class="nombre">038</div>
+    <div id="39" class="nombre">039</div>
+    <div id="40" class="nombre">040</div>
+
+    <div id="41" class="nombre">041</div>
+    <div id="42" class="nombre">042</div>
+    <div id="43" class="nombre">043</div>
+    <div id="44" class="nombre">044</div>
+    <div id="45" class="nombre">045</div>
+    <div id="46" class="nombre">046</div>
+    <div id="47" class="nombre">047</div>
+    <div id="48" class="nombre">048</div>
+    <div id="49" class="nombre">049</div>
+    <div id="50" class="nombre">050</div>
+
+    <div id="51" class="nombre">051</div>
+    <div id="52" class="nombre">052</div>
+    <div id="53" class="nombre">053</div>
+    <div id="54" class="nombre">054</div>
+    <div id="55" class="nombre">055</div>
+    <div id="56" class="nombre">056</div>
+    <div id="57" class="nombre">057</div>
+    <div id="58" class="nombre">058</div>
+    <div id="59" class="nombre">059</div>
+    <div id="60" class="nombre">060</div>
+
+    <div id="61" class="nombre">061</div>
+    <div id="62" class="nombre">062</div>
+    <div id="63" class="nombre">063</div>
+    <div id="64" class="nombre">064</div>
+    <div id="65" class="nombre">065</div>
+    <div id="66" class="nombre">066</div>
+    <div id="67" class="nombre">067</div>
+    <div id="68" class="nombre">068</div>
+    <div id="69" class="nombre">069</div>
+    <div id="70" class="nombre">070</div>
+
+    <div id="71" class="nombre">071</div>
+    <div id="72" class="nombre">072</div>
+    <div id="73" class="nombre">073</div>
+    <div id="74" class="nombre">074</div>
+    <div id="75" class="nombre">075</div>
+    <div id="76" class="nombre">076</div>
+    <div id="77" class="nombre">077</div>
+    <div id="78" class="nombre">078</div>
+    <div id="79" class="nombre">079</div>
+    <div id="80" class="nombre">080</div>
+
+    <div id="81" class="nombre">081</div>
+    <div id="82" class="nombre">082</div>
+    <div id="83" class="nombre">083</div>
+    <div id="84" class="nombre">084</div>
+    <div id="85" class="nombre">085</div>
+    <div id="86" class="nombre">086</div>
+    <div id="87" class="nombre">087</div>
+    <div id="88" class="nombre">088</div>
+    <div id="89" class="nombre">089</div>
+    <div id="90" class="nombre">090</div>
+
+    <div id="91" class="nombre">091</div>
+    <div id="92" class="nombre">092</div>
+    <div id="93" class="nombre">093</div>
+    <div id="94" class="nombre">094</div>
+    <div id="95" class="nombre">095</div>
+    <div id="96" class="nombre">096</div>
+    <div id="97" class="nombre">097</div>
+    <div id="98" class="nombre">098</div>
+    <div id="99" class="nombre">099</div>
+    <div id="100" class="nombre">100</div>
+
+</div>
+</body>
 </html>

@@ -1,0 +1,25 @@
+
+.nombres {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 50px;
+    grid-gap: 10px;
+}
+
+.nombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.row {
+    display : flex;
+}
+.nombres{
+    padding-top: 20px;
+}
+.invisible{
+    display: none;
+}
