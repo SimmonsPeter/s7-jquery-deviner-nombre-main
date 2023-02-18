@@ -20,6 +20,15 @@
 .nombres{
     padding-top: 20px;
 }
+.numGagnant{
+    background-color: chartreuse;
+}
 .invisible{
     display: none;
+}
+#new-game-btn{
+    margin-top: 2rem;
+    padding:1rem ;
+
+
 }
